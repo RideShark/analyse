@@ -13,6 +13,8 @@ function load(stats) {
 	var mapModules = {};
 	var mapModulesIdent = {};
 	var mapModulesUid = {};
+	
+	stats.modules = stats.modules || [];
 	stats.modules.forEach(function(module, idx) {
 		mapModules[module.id] = module;
 		mapModulesIdent["$"+module.identifier] = module;
